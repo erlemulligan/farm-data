@@ -9,7 +9,7 @@ type ButtonProps = {
     className?: string;
 };
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
     type = 'button',
     href,
     target='_self',
@@ -39,3 +39,5 @@ export const Button: React.FC<ButtonProps> = ({
         </button>
     );
 };
+
+export default Button;
