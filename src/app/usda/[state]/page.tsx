@@ -30,8 +30,11 @@ const UsdaState = async (props: any) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.data.map((item: any) => (
-                                <tr key={item.id}>
+                            {data.data.map((item: any, index: number) => (
+                                <tr
+                                    key={item.id}
+                                    className={index % 2 === 0 ? 'even-row' : 'odd-row bg-gray-200 text-black'}
+                                >
                                     <td className='p-2'>{item.year}</td>
                                     <td className='p-2'>{item.state}</td>
                                     <td className='p-2'>{item.report}</td>
