@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className="flex justify-between items-center p-4 bg-green-600 text-white">
-          <div className="flex items-center">
+          <div className="px-4 flex items-center">
             <a href="/" className="text-xl font-bold">
               Farm Data Dashboard
             </a>
