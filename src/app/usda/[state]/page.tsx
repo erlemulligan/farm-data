@@ -14,9 +14,9 @@ const UsdaState = async (props: any) => {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <div className="z-10 max-w-5xl w-full text-sm">
-                <h1 className="text-6xl font-bold mb-8">{state}</h1>
+                <h1 className="text-2xl font-bold mb-8">{state.replace(/\b\w/g, (state: string) => state.toUpperCase())}: Gross cash farm income</h1>
                     {data ? (
-                    <><h2 className="text-2xl font-bold">Data Summary</h2><table className="w-full">
+                    <><h2 className="text-2xl font-bold mb-4">Data Summary</h2><table className="w-full">
                         <thead>
                             <tr>
                                 <th>Year</th>
