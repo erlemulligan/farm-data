@@ -22,7 +22,8 @@ const UsdaState = async (props: any) => {
                                 <th>Year</th>
                                 <th>State</th>
                                 <th>Report</th>
-                                <th>Farm Type</th>
+                                <th>Category</th>
+                                <th>Category Value</th>
                                 <th>Estimate</th>
                                 <th>Median</th>
                                 <th>Statistic</th>
@@ -31,13 +32,14 @@ const UsdaState = async (props: any) => {
                         <tbody>
                             {data.data.map((item: any) => (
                                 <tr key={item.id}>
-                                    <td>{item.year}</td>
-                                    <td>{item.state}</td>
-                                    <td>{item.report}</td>
-                                    <td>{item.farmtype}</td>
-                                    <td>{item.estimate}</td>
-                                    <td>{item.median}</td>
-                                    <td>{item.statistic}</td>
+                                    <td className='p-2'>{item.year}</td>
+                                    <td className='p-2'>{item.state}</td>
+                                    <td className='p-2'>{item.report}</td>
+                                    <td className='p-2'>{item.category}</td>
+                                    <td className='p-2'>{item.category_value}</td>
+                                    <td className='p-2'>{item.estimate}</td>
+                                    <td className='p-2'>{item.median}</td>
+                                    <td className='p-2'>{item.statistic}</td>
                                 </tr>
                             ))}
                         </tbody>
