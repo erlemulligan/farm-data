@@ -51,7 +51,10 @@ const UsdaState = async (props: any) => {
                     )}
 
                     {data && (
-                        <pre className='text-xs'>{JSON.stringify(data, null, "\t")}</pre>
+                        <>
+                            <h2 className="pt-6 text-2xl font-bold mb-4">Raw Data</h2>
+                            <div className='text-xs text-wrap max-w-full max-h-[500px] overflow-auto'><pre>{JSON.stringify(data, null, "\t")}</pre></div>
+                        </>
                     )}
             </div>
         </main>
