@@ -8,7 +8,7 @@ export const getUsdaStateData = async (state: string) => {
 }
 
 const UsdaState = async (props: any) => {
-    const state = props.params.state || 'All';
+    const state = props.params.state.replace('-', ' ') || 'All';
     const data = await getUsdaStateData(state);
 
     return (
